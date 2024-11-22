@@ -5,7 +5,7 @@ This repository assembles the code, stl files, and documentation to create an el
 that mimics the [tin whistle](https://en.wikipedia.org/wiki/Tin_whistle), a simple woodwind instrument. This can be used as an education project to learn about
 programming an Arduino Nano, soldering, digital music synthesis, and how to use components such as a breath sensor and headphone jack. 
 
-This project was created with a mini grant the T3 Makerspace at the University of Alaska Fairbanks.
+This project was created with a mini grant from the T3 Makerspace at the University of Alaska Fairbanks.
 
 ## Components
 This project requires the following parts and components:
@@ -27,7 +27,16 @@ This project requires the following parts and components:
 1. Using the wiring diagram and component configuration, assemble the electric tin whistle on the breadboard.
    a. You can connect components to different Arduino pins than the wiring diagram indicates if it will better optimize the wiring. Make sure to change these pins in the code later.
 2. Flash the breath_sensor_testing.ino code to the Arduino Nano
-   a. With this code running, you can establish the lower and mid pressure thresholds. Looking at the Serial Plotter graph, try blowing into the pressure sensor. The lower threshold should be a pressure value above the rest value
+   a. With this code running, you can establish the lower and mid pressure thresholds. Looking at the Serial Plotter graph, try blowing into the pressure sensor. The lower threshold should be a pressure value slightly above the rest value, and the mid threshold should be about halfway between the rest pressure and the maximum blowing pressure.
+3. Flash the electric_tin_whistle.ino code to the Arduino Nano
+   a. Test the system. If things aren't working, you can use the commented testing code at the bottom of the file to test the buttons and headphone jack and figure out what is wrong.
+   b. If you changed any pin wiring from the wiring diagram, make sure to change the pin declarations in the code.
+4. Once you are sure all the parts are working correctly, you can begin soldering parts to the prototype board.
+   a. Use electrical tape to hold parts in place.
+5. Once the system is soldered together, test again.
+6. Print the case and mouthpiece.
+  a. You make need to file down parts of the case to make the two halves fit together.
+7. Assemble and play!
 
 ### Component Configuration
 - Arduino Nano: E49-63 & I49-63
