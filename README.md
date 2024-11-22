@@ -1,8 +1,8 @@
 # Electric Tin Whistle
 #### By Jenae Matson
 
-This repository assembles the code, stl files, and documentation to create an electric tin whistle. The electric tin whistle is a simple electric instrument 
-that the [tin whistle](https://en.wikipedia.org/wiki/Tin_whistle), a simple woodwind instrument. This can be used as an education project to learn about
+This repository assembles the code, stl files, and documentation to create an electric tin whistle. The electric tin whistle is an electric instrument 
+that mimics the [tin whistle](https://en.wikipedia.org/wiki/Tin_whistle), a simple woodwind instrument. This can be used as an education project to learn about
 programming an Arduino Nano, soldering, digital music synthesis, and how to use components such as a breath sensor and headphone jack. 
 
 This project was created with a mini grant the T3 Makerspace at the University of Alaska Fairbanks.
@@ -20,3 +20,18 @@ This project requires the following parts and components:
 - Breadboard
 - Earbuds
 - PLA Filament
+
+## Assembly Instructions
+
+### Component Pin Locations
+- Arduino Nano: E49-63 & I49-63
+- Air pressure sensor: H1-4
+- Buttons: 
+  - D42, D40, G42, G40
+  - D36, D34, G36, G34
+  - D30, D28, G30, G28
+  - D24, D22, G24, G22
+  - D18, D16, G18, G16
+  - D12, D10, G12, G10
+- Power switch: J43-45
+- Audio jack: A44-47
