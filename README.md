@@ -35,8 +35,9 @@ This project requires the following parts and components:
    a. Use electrical tape to hold parts in place.
 5. Once the system is soldered together, test again.
 6. Print the case and mouthpiece.
-  a. You make need to file down parts of the case to make the two halves fit together.
+   a. You make need to file down parts of the case to make the two halves fit together.
 7. Assemble and play!
+   a. The tin whistle fingering diagram and example song tabs above can help you get started. 
 
 ### Component Configuration
 - Arduino Nano: E49-63 & I49-63
