@@ -25,18 +25,25 @@ This project requires the following parts and components:
 
 ## Assembly Instructions
 1. Using the wiring diagram and component configuration, assemble the electric tin whistle on the breadboard.
+
    a. You can connect components to different Arduino pins than the wiring diagram indicates if it will better optimize the wiring. Make sure to change these pins in the code later.
 2. Flash the breath_sensor_testing.ino code to the Arduino Nano
+
    a. With this code running, you can establish the lower and mid pressure thresholds. Looking at the Serial Plotter graph, try blowing into the pressure sensor. The lower threshold should be a pressure value slightly above the rest value, and the mid threshold should be about halfway between the rest pressure and the maximum blowing pressure.
 3. Flash the electric_tin_whistle.ino code to the Arduino Nano
+
    a. Test the system. If things aren't working, you can use the commented testing code at the bottom of the file to test the buttons and headphone jack and figure out what is wrong.
+
    b. If you changed any pin wiring from the wiring diagram, make sure to change the pin declarations in the code.
 4. Once you are sure all the parts are working correctly, you can begin soldering parts to the prototype board.
+
    a. Use electrical tape to hold parts in place.
 5. Once the system is soldered together, test again.
 6. Print the case and mouthpiece.
-   a. You make need to file down parts of the case to make the two halves fit together.
+
+   a. You may need to file down parts of the case to make the two halves fit together.
 7. Assemble and play!
+
    a. The tin whistle fingering diagram and example song tabs above can help you get started. 
 
 ### Component Configuration
