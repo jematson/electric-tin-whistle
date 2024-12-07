@@ -5,7 +5,7 @@ This repository assembles the code, stl files, and documentation to create an el
 that mimics the [tin whistle](https://en.wikipedia.org/wiki/Tin_whistle), a simple woodwind instrument. This can be used as an education project to learn about
 programming an Arduino Nano, soldering, digital music synthesis, and how to use components such as a breath sensor and headphone jack. 
 
-This project was created with a mini grant the T3 Makerspace at the University of Alaska Fairbanks.
+This project was created with a mini grant from the T3 Makerspace at the University of Alaska Fairbanks.
 
 ## Components
 This project requires the following parts and components:
@@ -17,13 +17,28 @@ This project requires the following parts and components:
 - 1 [slide switch](https://www.amazon.com/Switch-SPDT-Micro-Breadboard-GuuYebe/dp/B0CRTPY88B/ref=sr_1_3?crid=27IWAPGXO1MMZ&dib=eyJ2IjoiMSJ9._ATEYuexpE4s6ZcRyDLfSCIAKh3bQiL95u7dTJn1UZ3y-SyFXw_BWVaa-FGQnrS6WE80pijUw7gkZrPlhPRIMHo8EBgC5LultrwsaGZ10pqGfQux0IcFpM0xNXPT_GRIjSpIEyMumHAoyfS2PAOeloukHnSPFlOKWxSEknA92bXF8nBvqzv7Mu8ecQL26Mo83bwqqC8etpcB-qd6Sg1EUvPvfrCekfO2Rxryvv4jWfc.oILbK06wLiG_KIEUB6fNbI9Tl4Fi1qLnr4_YWiLklDg&dib_tag=se&keywords=breadboard+toggle+switch&qid=1726950909&sprefix=breadboard+toggle+switc%2Caps%2C187&sr=8-3)
 - [Breadboard jumper wires](https://www.amazon.com/Breadboard-Minidodoca-Magnetic-Assortment-Alligator/dp/B0BFX352X6/ref=asc_df_B0BT82DH1Q/?tag=hyprod-20&linkCode=df0&hvadid=693270340266&hvpos=&hvnetw=g&hvrand=16202308993735360576&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9051751&hvtargid=pla-2062059538455&mcid=e6a607cfb9973276bcafccc1d8dc0e4f&th=1)
 - 1 [4 AA battery holder](https://www.amazon.com/LAMPVPATH-Battery-Holder-Bundle-Arduino/dp/B07BNN9PDF/ref=sr_1_1?crid=2HM5F0TK6SDRY&dib=eyJ2IjoiMSJ9.RTC14PQvxjhth6XIjocUZouOb8Sh2Ud3DFB-Q8NwKyJPZzmZ64Zq0juBxD19TY9BZnB8OqvFqBFjUd9oyHUt2ZApQfPLSJ8F18LJcord1M5nyfLKrYyi2QIYc4-vlM0V_YcK-7MsTtE0IAPJSxPKH_A0I9vvefnEHwZBBgBdZJ1AW2NZqwdTKpFlnwZlgX2ozD5NeHvLF40ftIvtQHmLaovXmI8T127YAPe9ROILK3F2d2VxI8IzOLG0crN3rqQMXUm9dkXiHG-GtW3XyBLuHEJ7WkdUUhB5Xv_8D-BM13k.Cv-COviu4b6XMDpgZ3L19hWi4Yz-v0sSkiJUcchOzYE&dib_tag=se&keywords=arduino+AAbattery+holder&qid=1726951550&s=electronics&sprefix=arduino+aabattery+holder%2Celectronics%2C186&sr=1-1)
+- 1 10kΩ resistor
 - Breadboard
 - Earbuds
 - PLA Filament
+- Computer with [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Assembly Instructions
+1. Using the wiring diagram and component configuration, assemble the electric tin whistle on the breadboard.
+   a. You can connect components to different Arduino pins than the wiring diagram indicates if it will better optimize the wiring. Make sure to change these pins in the code later.
+2. Flash the breath_sensor_testing.ino code to the Arduino Nano
+   a. With this code running, you can establish the lower and mid pressure thresholds. Looking at the Serial Plotter graph, try blowing into the pressure sensor. The lower threshold should be a pressure value slightly above the rest value, and the mid threshold should be about halfway between the rest pressure and the maximum blowing pressure.
+3. Flash the electric_tin_whistle.ino code to the Arduino Nano
+   a. Test the system. If things aren't working, you can use the commented testing code at the bottom of the file to test the buttons and headphone jack and figure out what is wrong.
+   b. If you changed any pin wiring from the wiring diagram, make sure to change the pin declarations in the code.
+4. Once you are sure all the parts are working correctly, you can begin soldering parts to the prototype board.
+   a. Use electrical tape to hold parts in place.
+5. Once the system is soldered together, test again.
+6. Print the case and mouthpiece.
+  a. You make need to file down parts of the case to make the two halves fit together.
+7. Assemble and play!
 
-### Component Pin Locations
+### Component Configuration
 - Arduino Nano: E49-63 & I49-63
 - Air pressure sensor: H1-4
 - Buttons: 
