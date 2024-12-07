@@ -1,5 +1,5 @@
 const int clkOut = 12; //4
-const int clkIn = 11; //3
+const int clkIn = 8; //3
 
 unsigned long sensorValue = 0;
 
